@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDE0F1"
+    android:orientation="vertical" >
+
+    <!-- 群资料 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#5078AC" >
+
+        <TextView
+            android:id="@+id/activity_group_info_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/common_returnsign"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_groupinfo_title"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#D8EBFA" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B6D1E6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- 群头像 -->
+
+            <com.org.mwd.view.RoundImageView
+                android:id="@+id/activity_groupinfo_groupImg_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/fg_1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/activity_groupinfo_groupImg_iv"
+                android:orientation="vertical" >
+
+                <!-- 群名称 -->
+
+                <TextView
+                    android:id="@+id/activity_groupinfo_groupname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="广州红十字会志愿者群"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+                <!-- 群号 -->
+
+                <TextView
+                    android:id="@+id/activity_groupinfo_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="374512575"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <!-- 定位所有在线成员 -->
+
+            <Button
+                android:id="@+id/activity_group_location_bt"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/location" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <RelativeLayout
+        android:id="@+id/activity_groupType_li"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#D8EBFA" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B6D1E6" />
+
+        <TextView
+            android:id="@+id/activity_groupType_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="群类型"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!-- 群类型 -->
+
+        <TextView
+            android:id="@+id/acyivity_groupinfo_myType_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="同事朋友"
+            android:textColor="#525252"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+    <!-- 群成员 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_group_number_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/activity_groupinfo_groupnumber"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/acyivity_groupinfo_groupmember_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/activity_groupinfo_groupmember_iv"
+            android:text="56人"
+            android:textColor="#525252"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_groupinfo_groupmember_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/common_check" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <RelativeLayout
+        android:id="@+id/activity_groupinfo_manageGroup_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B6D1E6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/activity_groupinfo_group_manage"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+        <!-- 群管理 -->
+
+        <ImageView
+            android:id="@+id/activity_groupinfo_groupmanage_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/common_check" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/avtivity_groupSet_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="创建日期"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_groupinfo_settingmessage_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="2014-10-12"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#D8EBFA" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/activity_edite_group_groupDesc"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+        <!-- 群描述 -->
+
+        <TextView
+            android:id="@+id/activity_groupinfo_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:text="真诚服务，奉献爱心！"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/activity_groupinfo_exitgroup_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/fragment_setting_exitbtn"
+            android:text="@string/activity_exitgroup"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.05" />
+
+                <Button
+                    android:id="@+id/activity_groupinfo_transfergroup_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/activity_friend_info_add"
+                    android:gravity="center"
+                    android:text="转让该群"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.05" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.05" />
+
+                <Button
+                    android:id="@+id/activity_groupinfo_dismissgroup_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.9"
+                    android:background="@drawable/activity_friend_info_add"
+                    android:gravity="center"
+                    android:text="解散该群"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.05" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/activity_groupinfo_addgroup_bt"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/activity_friend_info_add"
+                android:text="@string/activity_addgroup"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+</LinearLayout>

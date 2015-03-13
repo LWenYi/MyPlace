@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/fragment_message_popuwindow_accept_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acceptbtn"
+        android:text="接   受"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/fragment_message_popuwindow_refuse_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/refusebtn"
+        android:text="拒   绝"
+        android:textColor="#436CAA" />
+
+</LinearLayout>

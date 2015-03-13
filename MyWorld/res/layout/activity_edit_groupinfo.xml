@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDE0F1"
+    android:orientation="vertical" >
+
+    <!-- 顶部编辑群资料栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#5078AC" >
+        
+         <TextView
+             android:id="@+id/activity_edit_groupinfo_back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+            	android:layout_marginLeft="5dp"
+            	android:gravity="center_vertical"
+                android:text="@string/activity_editegroup_returnStr"
+                android:textColor="#ffffff"
+                android:textSize="18sp" 
+                android:drawableLeft="@drawable/common_returnsign"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_editegroup_editinfoStr"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#D8EBFA"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B6D1E6" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 群头像 -->
+
+
+			<com.org.mwd.view.RoundImageView
+                android:id="@+id/activity_editgroup_groupphoto_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/fg_1" />
+            <!-- 上传群头像按钮 -->
+
+            <Button
+                android:id="@+id/activity_editgroup_uploadphoto_btn"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/activity_editgroup_uploadphoto" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:contentDescription="@string/empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/activity_editegroup_addImgstr"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#B6D1E6" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <RelativeLayout
+        android:id="@+id/activity_edit_groupinfo_groupType_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B6D1E6" />
+
+        <TextView
+            android:id="@+id/activity_editegroup_groupType_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/activity_editegroup_groupkind"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_edit_groupinfo_grouptype_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/common_check" />
+        <!-- 群类型 -->
+
+        <TextView
+            android:id="@+id/activity_edit_groupinfo_grouptype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/activity_edit_groupinfo_grouptype_iv"
+            android:text="@string/activity_editgroup_valgroupkind"
+            android:textColor="#525252"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#B6D1E6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/activity_editegroup_txtgroupname"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_edit_groupinfo_groupName_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/common_check" />
+        <!-- 群名称 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" />
+
+            <EditText
+                android:id="@+id/activity_edit_groupinfo_groupName_et"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"   
+                android:gravity="center_vertical|right"        
+                android:layout_weight="0.6"
+                android:background="@null"
+                android:focusableInTouchMode="false"
+                android:maxLength="8"
+                android:text="@string/activity_editegroup_valgroupname"
+                android:textColor="#525252"
+                android:hint="@string/empty"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/activity_editegroup_groupDesc"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity_edit_groupinfo_groupgroupDesc_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/common_check" />
+        <!-- 群简介 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" />
+
+            <EditText
+                android:id="@+id/activity_edit_groupinfo_groupgroupDesc_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.6"
+                android:background="@null"
+                android:focusableInTouchMode="false"
+                android:maxLength="20"
+                android:maxEms="10"
+                android:singleLine="false"
+                android:gravity="right"    
+                android:hint="@string/empty"
+                android:textColor="#525252"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.9" />
+
+    <Button
+        android:id="@+id/activity_editgroup_savebtn_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@drawable/finish_bg"
+        android:gravity="center"
+        android:text="@string/activity_editegroup_txtSave"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+</LinearLayout>

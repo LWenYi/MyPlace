@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/activity_friend_info_add_normal" android:state_pressed="false"/>
+    <item android:drawable="@drawable/activity_friend_info_add_pressed" android:state_pressed="true"/>
+
+</selector>

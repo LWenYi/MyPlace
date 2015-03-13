@@ -1,0 +1,141 @@
+/*   ÃÌº”∫√”—   */
+#add_friend_pop{
+width:300px;
+display:none;
+background-color: #FFFFFF;
+line-height: 30px;
+z-index: 99;
+position: absolute;
+top:50%;
+left:50%;
+margin-left:-150px;
+margin-top:-100px;
+} 
+#add_group_pop{
+width:300px;
+display:none;
+background-color: #FFFFFF;
+line-height: 30px;
+z-index: 99;
+position: absolute;
+top:50%;
+left:50%;
+margin-left:-150px;
+margin-top:-150px;
+} 
+#af,#ag{
+float:left;
+background-color:#f4f6f7;
+height:30px;
+width:300px;
+padding-top:3px;
+border-bottom:#d9dbdc solid 1px; 
+} 
+.ft{
+}
+#aft{
+margin-top:0px;
+}
+#addfriend_text,#addgroup_text{
+height:20px;
+width:180px;
+margin-top:5px;
+margin-left:15px;
+padding:5px 8px;
+border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+}
+#find_friend_btn{
+height:30px;
+width:65px;
+margin-top:10px;
+padding: 6px 20px;
+text-align: center;
+background-color:#59ACFF;
+border:none;
+color: white;
+border-radius: 3px;
+font-size:13px;
+font-weight:700;
+}
+#find_group_btn{
+height:30px;
+width:65px;
+margin-top:10px;
+padding: 6px 10px;
+text-align: center;
+background-color:#59ACFF;
+border:none;
+color: white;
+border-radius: 3px;
+font-size:13px;
+font-weight:700;
+}
+
+#find_friend_btn:hover,#find_group_btn:hover{
+opacity:0.8;
+}
+#addTable,#addTable_g{
+margin-left:15px;
+margin-top:10px;
+width:280px;
+text-align:left;
+margin-bottom:10px;
+}
+.addfriend_btn{
+height:30px;
+width:65px;
+padding: 6px 10px;
+text-align: center;
+background-color:#59ACFF;
+border:none;
+color: white;
+border-radius: 3px;
+font-size:13px;
+font-weight:700;
+}
+.addgroup_btn{
+height:30px;
+width:65px;
+padding: 6px 10px;
+text-align: center;
+background-color:#59ACFF;
+border:none;
+color: white;
+border-radius: 3px;
+font-size:13px;
+font-weight:600;	
+}
+.addfriend_btn:hover,.addgroup_btn:hover{
+opacity:0.8;	
+}
+
+#add_message,#add_gmessage{
+	color:red;
+	margin-left:15px;
+	margin-top:0px;
+}
+.addf{
+	float:right;
+	margin-right:3px;
+	margin-top:0px;
+}
+#addfriendclose,#addgroupclose{
+	text-decoration:none;
+	padding:5px;
+	font-size:18px;
+	border-radius: 15px;
+}
+#addfriendclose:hover,#addgroupclose:hover{
+	background-color:#59ACFF;
+	opacity:0.3;
+	color:#060606;
+	font-weight:bold;
+}
+#add_result{
+max-height:200px;
+overFlow-y:scroll; 
+overflow:auto;
+overflow-x:hidden
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="js/jquery-1.3.1.js" type="text/javascript"></script>
+<script src="js/adminlogin.js" type="text/javascript"></script>
+<title>后台登录页面</title>
+<style type="text/css">
+body{
+background-color:#D5E0FD;
+opacity:0.9;
+}
+#login{
+border:#d8d8da solid 1px;
+height:300px;
+width:360px;
+position: absolute;
+top:50%;  
+left:50%;
+margin-left:-180px;
+margin-top:-170px;
+background-color:#ffffff;
+}
+#div1{
+height:170px;
+padding-left:45px;
+padding-top:10px;
+}
+#div2{
+background-color:#f9f9f9;
+height:30px;
+border-bottom:#d7d7d7 solid 1px;
+}
+.p1{
+margin-left:3px;
+margin-top:10px;
+}
+.pc{
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+font-weight:bold;
+margin-top:5px;
+}
+#admin,#adminpsw{
+margin-top:20px;
+height:30px; 
+width:250px; 
+padding:5px 8px;
+border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:7px;
+}
+#Adminlogin{
+margin-top:25px;
+height:40px; 
+width:265px; 
+padding:5px 8px;
+border:1px solid #aaa;
+border-radius:5px;
+background-color:#699EF5;
+font-size:15px;
+}
+#Adminlogin:hover{
+opacity:0.9;
+}
+#error{
+height:10px;
+color:red;
+}
+</style>
+</head>
+
+<body>
+	<div id="login">
+		<div id="div2">
+			<p class="p1">天下纵横后台管理登录</p>
+		</div>
+		<div id="div1">
+			<div id="error"></div>
+			<div><input type="text" name="admin" id="admin" placeholder="Administrator"/></div>
+			<div><input type="password" name="adminpsw" id="adminpsw" placeholder="Password"/></div>
+			<div><input type="button" name="Adminlogin" value="登录" id="Adminlogin" /></div>
+		</div>
+	</div>
+</body>
+</html>

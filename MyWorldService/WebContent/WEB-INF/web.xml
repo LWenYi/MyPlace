@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <filter>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <filter-class>com.util.CheckStuLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <url-pattern>/CreatGroup.html</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <url-pattern>/modify_group.html</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <url-pattern>/personal_info.html</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <url-pattern>/share.html</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <url-pattern>/adminIndex.html</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <url-pattern>/Group.html</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <url-pattern>/User.html</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>CheckStuLoginFilter</filter-name>
+    <url-pattern>/index.html</url-pattern>
+  </filter-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <listener>
+    <listener-class>com.util.MySessionListener</listener-class>
+  </listener>
+</web-app>

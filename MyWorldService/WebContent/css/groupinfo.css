@@ -1,0 +1,86 @@
+#groupinfo,#friendsinfo{
+position: absolute;
+width:400px;
+top:50%;  
+left:50%;
+margin-left:-200px;
+margin-top:-200px;
+z-index: 99;
+display:none;
+background-color:#FFFFFF;
+border-radius:8px;
+border:#EFEFEF 3px solid;
+box-shadow: 10px 10px 5px #888888;
+
+}
+#ftitle,#gtitle{
+margin-top:0px;
+width:120px;
+padding:10px;
+margin-left:120px;
+font-size:20px;
+}
+#fc,#gc{
+	float:right;
+	margin-top:-50px;
+	margin-right:-20px;
+	border-radius:16px;
+}
+.friends_close,.ginfo_close{
+float:right;
+margin-right:20px;
+margin-top:8px;
+cursor: pointer; 
+text-decoration: none;
+font-size:22px;
+color:#c0c2c4;
+padding:4px;
+border-radius:16px;
+}
+.ginfo_close:hover,.friends_close:hover{
+background-color:#59ACFF;
+color:white;
+opacity:0.5;
+}
+#ginfo{
+background-color:#F9F9F9;
+margin:15px;
+border-radius:20px;
+margin-top:0px;
+}
+#table1{
+height:100px;
+width:370px;
+border-bottom:#CACACA solid 1px;
+padding-left:20px;
+}
+#groupimg{
+height:70px;
+width:70px;
+}
+.friendsimg{
+height:60px;
+width:60px;
+}
+#table_g{
+margin-top:20px;
+height:150px;
+padding-left:20px;
+
+}
+#table_f{
+	margin-left:15px;
+	padding-top:10px;
+}
+#table_f tr{
+height:30px;
+}
+.data{
+padding-left:10px;
+}
+.finfo{
+background-color:#F9F9F9;
+margin:15px;
+border-radius:20px;
+margin-top:0px;
+}

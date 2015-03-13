@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="big_blue">#6391CC</color>
+    <color name="activity_personal_center_editview_color">#D8EBFA</color>
+    <color name="activity_login_tv_color">#055586</color>
+    <color name="offline">#CCCCCC</color>
+    <color name="fragment_contact_txtcolor_checked">#56789E</color>
+    <color name="fragment_contact_txtcolor_unchecked">#7D8184</color>
+</resources>

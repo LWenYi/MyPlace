@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="200dp"   
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/more_popupwindow_near_rl"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/more_popuwindow_bg" >
+        
+         <TextView                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="附近"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/near" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+	<RelativeLayout
+	    android:id="@+id/more_popupwindow_compass_rl"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/more_popuwindow_bg" >
+          <TextView                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="罗盘"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/luopan" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/more_popupwindow_follow_rl"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/more_popuwindow_bg" >
+        
+         <TextView                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="跟随"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/follow" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/more_popupwindow_normal_rl"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/more_popuwindow_bg" >
+        
+          <TextView                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="普 通"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/follow" />
+    </RelativeLayout>
+</LinearLayout>

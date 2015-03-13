@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDE0F1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"
+        android:background="#5078AC" >
+
+        <!-- 返回按钮 -->
+
+        <TextView
+            android:id="@+id/activity_personal_center_return_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/common_returnsign"
+            android:gravity="center_vertical"
+            android:text="@string/fragment_settingfragment_txtset"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <!-- 用户头像 -->
+
+        <com.org.mwd.view.RoundImageView
+            android:id="@+id/activity_personalcenter_userPhoto_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/empty" />
+    </RelativeLayout>
+
+    <!-- 用户账号信息 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_personalcenter_editAccount_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.8"
+        android:background="#D8EBFA" >
+
+        <!-- 用户账号 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_personalcenter_txtAccount"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:id="@+id/activity_personalcenter_userAccount_tv"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:textColor="#7296C8"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <!-- 用户昵称 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_personalcenter_editNick_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_personalcenter_txtNick"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" />
+
+            <EditText
+                android:id="@+id/activity_personalcenter_userNick_et"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:background="@null"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:minWidth="2dp"
+                android:textColor="#7296C8"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/common_check"
+            android:contentDescription="@string/empty"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <!-- 用户邮箱地址 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_personalcenter_editEmail_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_personalcenter_txtEmail"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" />
+
+            <EditText
+                android:id="@+id/activity_personalcenter_userEmail_et"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:background="@null"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:textColor="#7296C8"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/common_check"
+            android:contentDescription="@string/empty"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <!-- 用户性别 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_personalcenter_editGender_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_personalcenter_txtGender"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:id="@+id/activity_personalcenter_userGender_tv"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:textColor="#7296C8"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/common_check"
+            android:contentDescription="@string/empty"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <!-- 用户生日 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_personalcenter_editBirthday_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_personalcenter_txtBirthday"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:id="@+id/activity_personalcenter_userBirthday_tv"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:textColor="#7296C8"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/common_check"
+            android:contentDescription="@string/empty"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+
+    <!-- 用户所在地 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_personalcenter_editAddress_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/common_presseddown_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_personalcenter_txtSeat"
+            android:textColor="#7296C8"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3" />
+
+            <EditText
+                android:id="@+id/activity_personalcenter_userSeat_et"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.6"
+                android:background="@null"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:textColor="#7296C8"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.1" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/common_check"
+            android:contentDescription="@string/empty"
+            android:gravity="center_vertical" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#B6D1E6" />
+    </RelativeLayout>
+    <!-- 编辑资料按钮 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/activity_personalcenter_edit_info_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:background="@drawable/finish_bg" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/personalcenter_edit_info"
+            android:background="@drawable/personalcenter_editsign"
+            android:contentDescription="@string/empty" />
+
+        <TextView
+            android:id="@+id/personalcenter_edit_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_personalcenter_edit_info"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</LinearLayout>

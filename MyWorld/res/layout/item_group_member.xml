@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_friend_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <com.org.mwd.view.RoundImageView
+            android:id="@+id/fragment_friend_img_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerInside"
+            android:src="@drawable/xiaoxi" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/fragment_friend_img_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fragment_friend__name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王晓慧"
+                android:textColor="#34aefa"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fragment_friend__desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="个人描述"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/fragment_friend_location_iv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/location" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C9D2D9" />
+
+</LinearLayout>

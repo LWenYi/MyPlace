@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.8" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.2" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/activity_main_map_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/activity_main_bottom_bgcolor" >
+
+                <ImageView
+                    android:id="@+id/activity_main_map_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/activity_main_location"
+                    android:contentDescription="@string/empty" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_main_contact_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/activity_main_bottom_bgcolor" >
+
+                <ImageView
+                    android:id="@+id/activity_main_contact_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/activity_main_contact"
+                    android:contentDescription="@string/empty" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_main_message_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/activity_main_bottom_bgcolor" >
+
+                <ImageView
+                    android:id="@+id/activity_main_message_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/activity_main_message"
+                    android:contentDescription="@string/empty" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_message_count_rl"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/activity_main_count" 
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/activity_main_message_count_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_main_setting_layout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/activity_main_bottom_bgcolor" >
+
+                <ImageView
+                    android:id="@+id/activity_main_setting_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/activity_main_setting"
+                    android:contentDescription="@string/empty" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

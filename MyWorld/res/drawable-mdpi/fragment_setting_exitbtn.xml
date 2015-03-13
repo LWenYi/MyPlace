@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/fragment_setting_exitbtn_normals" android:state_pressed="false"/>
+    <item android:drawable="@drawable/fragment_setting_exitbtn__pressed" android:state_pressed="true"/>
+
+</selector>

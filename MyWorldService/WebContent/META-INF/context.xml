@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/MyWorld" docBase="MyWorld" reloadable="true"> 
+<Resource
+
+name="jdbc/mdata" 
+auth="Container"
+type="javax.sql.DataSource"
+driverClassName="com.mysql.jdbc.Driver"
+url="jdbc:mysql://172.16.10.198:3306/mdata"
+username="root"
+password="123456"
+maxActive="20"
+maxIdle="200"
+maxWait="-1" />
+
+</Context>

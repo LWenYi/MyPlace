@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/item_chat_from_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#bfbfbf"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp"
+        android:text="2012-01-02 24:32:30"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <com.org.mwd.view.RoundImageView
+            android:id="@+id/item_chat_from_memberphoto_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_chat_from_memberphoto_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_chat_from_membername_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_grouptalk_membername1"
+                android:textColor="#4F535C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_chat_from_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/chat_from_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left|center"
+                android:lineSpacingExtra="2dp"
+                android:minHeight="30dp"
+                android:maxEms="8"
+                android:singleLine="false"
+                android:text="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

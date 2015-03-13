@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 顶部消息栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#5078AC" >
+
+        <TextView
+            android:id="@+id/activity_friendtalk_returnsign_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/common_returnsign"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <!-- 查看好友资料按钮 -->
+
+        <Button
+            android:id="@+id/activity_friendtalk_friendinfo_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/common_lookinfo" />
+        <!-- 好友名称 -->
+
+        <TextView
+            android:id="@+id/activity_friendtalk_friendname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_friendtalk_friendname"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <!-- 发送消息按钮 -->
+
+    <com.org.mwd.view.MsgListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical" />
+
+    <!-- 底部发送消息 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#5078AC"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <!-- 消息发送方式 -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/activity_friendtalk_sendtype_bt"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/common_sendway" />
+        </RelativeLayout>
+
+        <!-- 消息输入框 -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5" >
+
+            <EditText
+                android:id="@+id/activity_friendtalk_sendContent_et"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_editsend_bg"
+                android:inputType="text"
+                android:textColor="#525252" />
+        </RelativeLayout>
+        <!-- 发送消息按钮 -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5" >
+
+            <Button
+                android:id="@+id/activity_friendtalk_send_bt"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/common_sentbtn_bg"
+                android:text="@string/activity_friendtalk_txtsend"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

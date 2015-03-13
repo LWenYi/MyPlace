@@ -1,0 +1,122 @@
+<resources>
+
+    <string name="app_name">天下纵横</string>
+    <string name="empty"></string>
+   
+    <string name="action_settings">Settings</string>
+    <string name="fragment_map_txtsearch">搜地点、查公交、找路线</string>
+    
+    <string name="activity_rigister_txtreturn">返回</string>
+    <string name="activity_register_register">注  册</string>
+	<string name="activity_register_name">昵称</string>
+	
+	<string name="activity_login_phone">手机号</string>
+    <string name="activity_login_password">密码</string>
+    <string name="activity_login_register">注册账号</string>
+    <string name="activity_login_1">|</string>
+    <string name="activity_login_findpassword">找回密码</string>   
+	<string name="activity_login_btn">登 \u0020\u0020\u0020  录</string>
+    
+	<string name="activity_exitgroup">退出该群</string>
+	
+	<string name="activity_groupinfo_title">群资料</string>
+	<string name="activity_groupinfo_groupnumber">群成员</string>
+	<string name="activity_groupinfo_group_manage">管理群</string>
+	<string name="activity_edite_group_groupDesc">群简介</string>
+	
+	
+	<string name="fragment_contact_group_contact">联系人</string>
+	<string name="fragment_contact_grouplist_add">添加</string>
+	<string name="fragment_contact_grouplist_friend">我的好友</string>
+	<string name="fragment_contact_grouplist_group">我的群</string>
+ 	
+ 	<string name="activity_friendtalk_accepttime">9:15</string>
+	<string name="activity_friendtalk_friendname">王小薇</string>
+	<string name="activity_friendtalk_talkcontent">这个星期天有空吗啊啊啊啊啊啊啊啊啊啊啊啊啊啊</string>
+	<string name="activity_friendtalk_txtsend">发送</string>
+	
+	<string name="fragment_message_txtmessage">消息</string>
+
+	<string name="activity_grouptalk_membername1">王小薇:</string>
+	<string name="activity_addgroup">加入该群</string>
+	<string name="activity_groupmember_return_tv">群资料</string>
+	<string name="activity_groupmember_tv">群成员</string>
+	
+	<string name="pulltorefresh">刷新&#8230;</string>
+	<string name="lastupdate">最近更新时间</string>
+	
+	<string name="activity_editegroup_returnStr">群资料</string>	
+	<string name="activity_editegroup_editinfoStr">编辑群资料</string>		
+	<string name="activity_editegroup_addImgstr">点击+号上传自定义头像</string>		
+    <string name="activity_editegroup_txtgroupname">群名称</string>
+    <string name="activity_editegroup_valgroupname">广州红十字会</string>
+	<string name="activity_editegroup_groupkind">群类型设置</string>
+	<string name="activity_editgroup_valgroupkind">同事朋友</string>
+	<string name="activity_editegroup_groupDesc">群简介</string>
+	<string name="activity_editegroup_txtSave">保\u0020\u0020存</string>
+	
+	
+	<string name="activity_add_strReturn">联系人</string>
+    <string name="activity_add">添加</string>
+    <string name="activity_add_addString">手机号/昵称/群号/群名</string>
+    <string name="activity_add_findfriends">查找好友</string>
+    <string name="activity_add_findgroup">查找群</string>
+    <string name="activity_add_creategroup">创建群</string>
+	
+    <string name="activity_create_group_strReturn">添加</string>
+    <string name="activity_creategroup">创建群</string>
+    <string name="activity_create_group_group_size">10人群</string>
+    <string name="activity_create_group_choose_group_size">选择群规模</string>
+    <string name="activity_create_group_group_type">同事朋友</string>
+    <string name="activity_create_group_choose_group_type">选择群分类</string>
+    <string name="activity_creategroup_groupname">群名称</string>
+    <string name="activity_creategroup_groupdesc">群描述(20字以内)</string>
+    <string name="activity_creategroup_create"> 创\u0020\u0020\u0020建 </string>
+    
+    <string name="fragment_settingfragment_txtset">设置</string>
+    <string name="fragment_settingfragment_txtmanager">账号管理</string>
+    <string name="fragment_settingfragment_txtaboutus">关于我们</string>
+    <string name="fragment_settingfragment_txtupdate">软件更新</string>
+    <string name="fragment_settingfragment_txtmyseat">我的位置</string>
+    <string name="fragment_setting_txtexit">退出当前账号</string>
+    
+     <string name="activity_personalcenter_txtNick">昵称</string>
+    <string name="activity_personalcenter_txtSeat">所在地</string>
+    <string name="activity_personalcenter_txtAccount">账号</string>
+    <string name="activity_personalcenter_txtEmail">邮箱</string>
+    <string name="activity_personalcenter_txtGender">性别</string>
+    <string name="activity_personalcenter_txtBirthday">生日</string>
+    <string name="activity_personalcenter_edit_info">完成编辑</string>
+    
+	<drawable name="common_presseddown_bg_normal">#D8EBFA</drawable>
+    <drawable name="common_presseddown_bg_bg_pressed">#5078AC</drawable>
+    
+    <drawable name="common_editphoto_normal">#FAFAFA</drawable>
+    <drawable name="common_editphoto_pressed">#E0DDDD</drawable>
+	
+    <drawable name="activity_main_bottom_bgcolor_normal">#5078AC</drawable>
+    <drawable name="activity_main_bottom_bgcolor__pressed">#6391CC</drawable>
+    
+    <string name="activity_grouptalk_txtsend">发送</string>
+    
+        <string name="activity_friend_info_return">返回</string>
+    <string name="activity_friend_info_valnick">王晓慧</string>
+    <string name="activity_friend_info_valgender">女</string>
+    <string name="activity_friend_info_valaddress">广东广州</string>
+    <string name="activity_friend_info_valemail">857509890@qq.com</string>
+    <string name="activity_friend_info_desc">个人描述</string>
+    <string name="activity_friend_info_hintdesc">这个人很懒，什么也没留下！</string>
+    <string name="activity_friend_info_title">好友资料</string>
+    <string name="activity_friend_info_number">账号</string>
+    <string name="activity_friend_info_birth">生日</string>
+    <string name="activity_friend_info_del_friend">删除好友</string>
+    <string name="activity_friend_info_location">好友位置</string>
+    <string name="activity_friend_info_add_friend">添加好友</string>
+    <string name="activity_friendsinfo_email">邮箱</string>
+    
+    <drawable name="common_item_rl_normal">#E4EDF6</drawable>
+    <drawable name="common_item_rl_pressed">#E0DDDD</drawable>
+    
+    <drawable name="more_popuwindow_bg_normal">#5078AC</drawable>
+    <drawable name="more_popuwindow_bg_pressed">#78A1D5</drawable>
+</resources>

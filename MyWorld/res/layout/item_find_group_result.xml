@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#E4EDF6"
+    android:descendantFocusability="blocksDescendants" >
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CAE9FD" />
+	
+    <com.org.mwd.view.RoundImageView
+        android:id="@+id/activity_add_find_item_icon_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/empty" />
+
+    <TextView
+        android:id="@+id/activity_add_find_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/activity_add_find_item_icon_iv" />
+
+    <Button
+        android:id="@+id/item_find_group_addgroup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="加 群"
+        android:textColor="#ffffff"
+        android:background="@drawable/item_find_add_btn"
+        android:contentDescription="@string/empty" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#C9D2D9" />
+
+</RelativeLayout>

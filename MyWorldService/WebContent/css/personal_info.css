@@ -1,0 +1,222 @@
+
+#all{
+}
+#toppart{
+margin-top:0px;
+margin-left:auto;
+margin-right:auto;
+}
+.bg{
+height:60px;
+width:60px;
+cursor:pointer;
+}
+table{
+}
+.pslogo{
+	font-size:30px;
+	font-family:"新宋体";
+}
+.back{
+text-decoration:none;
+float:right;
+margin-top:-18px;
+color:#4A74E1;
+font-weight:bold;
+}
+
+#toppart{
+}
+#middlepart{
+margin-top:10px;
+margin-left:auto;
+margin-right:auto;
+border:#D2D2D2 3px solid;
+box-shadow: 10px 10px 5px #888888;
+border-radius:7px;
+background-color:#FAFAFA;
+height:800px;
+}
+#pst{
+height:40px;
+background-color:#DBE9FD;
+font-size:30px;
+padding:20px;
+}
+#psdiv{
+margin-left:0px;
+margin-top:0px;
+height:720px;
+width:880px;
+}
+#leftpart{
+margin:0px;
+padding:0px;
+float:left;
+width:130px;
+height:700px;
+margin-left:0px;
+border-right:#EAEAEA solid 1px;
+}
+#limenu{
+list-style:none;
+margin-left:-40px;
+margin-top:30px;
+}
+#limenu li{
+font-family:"新宋体";
+font-weight:bold;
+height:25px;
+text-align:left;
+padding:5px;
+cursor:pointer;
+}
+.chosed{
+background-color:#EBF1FC;
+}
+
+#rightpart{
+margin-left:0px;
+padding:0px;
+float:left;
+height:720px;
+}
+/*个人资料*/
+#personinfo{
+float:left;
+height:720px;
+margin-left:165px;
+margin-top:-700px;
+}
+#nav{
+list-style-type:none;
+padding:0px;
+margin:0px;
+
+}
+#nav li{
+padding-left:70px;
+padding-top:12px;
+padding-bottom:12px; 
+border-bottom:1px solid #eee;
+}
+
+label {
+	width:140px;
+	margin-top: 3px;
+	display:inline-block;
+	float:left;
+	padding:3px;
+}
+.mblabel{
+	margin-top:-2px;
+}
+.labelPic{
+width:140px;
+margin-top:40px;
+}
+#person_head_pic{
+width:70px;
+height:70px;
+margin-bottom:-5px;
+}
+.txt {
+	height:20px; 
+	width:220px; 
+	padding:5px 8px;
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:2px;
+}
+.txt2{
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+padding:5px;
+}
+#modify_button{
+border-radius: 3px;
+color: white;
+padding: 8px 25px;
+text-align: center;
+background-color:#4A74E1;
+font-weight:500;
+border:none;
+font-weight:700;
+}
+#modify_button:hover,#modifypsw_button:hover{
+opacity:0.8;
+padding: 9px 27px;
+}
+.biuuu1{
+	height:20px; 
+	width:220px; 
+	padding:5px 8px;
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:2px;
+	
+}
+#modifypsw{
+float:left;
+height:720px;
+margin-left:165px;
+margin-top:-700px;
+padding-top:30px;
+display:none;
+}
+#modifypsw_button{
+border-radius: 3px;
+color: white;
+padding: 8px 25px;
+text-align: center;
+background-color:#4A74E1;
+font-weight:500;
+border:none;
+margin-bottom:5px;
+font-weight:700;
+}
+
+#preview{
+margin-left:150px;
+width:70px;
+height:70px;
+border:1px solid #eee;
+}  
+img{
+height:70px;
+width:70px;
+}  
+#rb{
+margin-left:230px;
+margin-top:-24px;
+}
+#ps{
+color:red;
+margin-left:20px;
+}
+#ps_error{
+color:green;
+margin-left:70px;
+}
+#ps_img{
+margin-left:-80px;
+color:red;	
+}
+#ps_nick,#ps_phone,#ps_email{
+margin-left:20px;
+color:red;
+}
+.pswlabel{
+	width:120px;
+}
+#psw,#newpswerror,#againpsw{
+margin-left:20px;
+color:red;	
+}
+#psw_error{
+	height:20px;
+	margin-left:130px;
+	margin-top:-28px;
+	color:green;
+	margin-bottom:5px;
+}

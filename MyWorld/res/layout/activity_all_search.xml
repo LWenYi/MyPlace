@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRoutePlanSearchActivity" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmap"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/activity_all_search_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/activity_all_search_back_bt"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <AutoCompleteTextView
+            android:id="@+id/activity_all_search_searchkey"
+            android:layout_width="220dip"
+            android:layout_height="50dip"
+            android:hint="@string/fragment_map_txtsearch" />
+
+        <Button
+            android:id="@+id/activity_all_search_search_bt"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_all_search_searchcontent_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dip"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/activity_all_search_start_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/activity_all_search_start_tv"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:text="起点" />
+
+            <AutoCompleteTextView
+                android:id="@+id/activity_all_search_start_et"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_all_search_end_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/activity_all_search_end_tv"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:text="终点" />
+
+            <AutoCompleteTextView
+                android:id="@+id/activity_all_search_end_et"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_all_search_btn_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:layout_marginLeft="230dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/activity_all_search_clean_bt"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="清空" />
+
+        <Button
+            android:id="@+id/activity_all_search_bus_bt"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="公交" />
+
+        <Button
+            android:id="@+id/activity_all_search_drive_bt"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="驾车" />
+
+        <Button
+            android:id="@+id/activity_all_search_walk_bt"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="步行" />
+    </LinearLayout>
+
+</RelativeLayout>

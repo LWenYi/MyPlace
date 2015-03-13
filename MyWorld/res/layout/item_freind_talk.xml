@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:orientation="vertical" >
+    <!-- 消息接收时间 -->
+    <TextView
+        android:id="@+id/activity_friendtalk_accepttime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/activity_friendtalk_accepttime"
+        android:textColor="#525252"
+        android:textSize="@dimen/xs_size" />
+    <!-- 用户发的消息 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" >
+
+        <!-- 用户头像 -->
+
+        <ImageView
+            android:id="@+id/activity_friendtalk_userphoto_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/empty" />
+        <!-- 消息内容 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/activity_friendtalk_userphoto_iv"
+            android:background="@drawable/activity_friendtalk_textview_style"
+            android:maxEms="15"
+            android:singleLine="false"
+            android:text="@string/activity_friendtalk_talkcontent"
+            android:textColor="#525252"
+            android:textSize="@dimen/xs_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <!-- 好友消息 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 好友头像 -->
+
+        <ImageView
+            android:id="@+id/activity_friendtalk_friendphoto"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/activity_friendtalk_friendphoto"
+            android:contentDescription="@string/empty" />
+        <!-- 好友消息内容 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/activity_friendtalk_friendphoto"
+            android:background="@drawable/activity_friendtalk_textview_style"
+            android:maxEms="15"
+            android:singleLine="false"
+            android:text="@string/activity_friendtalk_talkcontent"
+            android:textColor="#525252"
+            android:textSize="@dimen/xs_size" />
+    </RelativeLayout>
+
+</LinearLayout>
